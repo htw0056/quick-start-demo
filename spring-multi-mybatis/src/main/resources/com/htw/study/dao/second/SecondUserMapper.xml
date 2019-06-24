@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.htw.study.dao.second.SecondUserMapper">
+    <resultMap type="com.htw.study.model.User" id="user">
+        <id property="id" column="id"/>
+        <id property="user" column="user"/>
+    </resultMap>
+
+    <select id="get" resultMap="user">
+        select id,name
+        from user
+        where id = #{id};
+    </select>
+
+
+</mapper>
