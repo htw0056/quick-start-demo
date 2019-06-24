@@ -357,7 +357,7 @@ Activiti的Process Engine符合BPMN 2.0标准。如果采用图形化展示，�
 
 
 
-![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/t1.png)
+![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/t1.png)
 
 
 
@@ -367,14 +367,14 @@ Activiti的Process Engine符合BPMN 2.0标准。如果采用图形化展示，�
 
 | BPMN形状                                                     | Onboarding.bpmn20.xml 行号 | 注释                                                         |
 | ------------------------------------------------------------ | -------------------------- | ------------------------------------------------------------ |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/2.png) | 8                          | 事件开始                                                     |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/3.png) | 9-15                       | 用户任务收集2个表单属性：“fullName”和“yearsOfExperience”。请注意，第9行的候选组设置为“管理员”。 |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/4.png) | 21-27                      | 用户任务收集1表单属性：“personalWelcomeTime”。请注意，第22行的候选组设置为“管理员”。 |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/5.png) | 31-35                      | 脚本任务表示自动数据输入到虚拟后端。请注意，虽然简单，但这是一个简单的脚本可以设置一个过程变量autoWelcomeTime（第34-35行）:`var dateAsString = new Date().toString(); execution.setVariable("autoWelcomeTime", dateAsString);` |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/6.png) | 18                         | 定义“Years of Experience”排他网关。 （决定执行其中一条或另一条路径。） |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/6.png) | 37-39                      | 表示">3"时的逻辑，使用变量yearsOfExperience :`${yearsOfExperience > 3}` |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/6.png) | 18,36                      | 在排他网关第18行，这里指向默认的执行路径”automatedIntroPath" (line 36)，表示不满足条件">3"时的执行路径 |
-| ![Alt text](https://github.com/htw0056/Activiti-quick-start-guide/raw/master/picture/7.png) | 298                        | 事件结束                                                     |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/2.png) | 8                          | 事件开始                                                     |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/3.png) | 9-15                       | 用户任务收集2个表单属性：“fullName”和“yearsOfExperience”。请注意，第9行的候选组设置为“管理员”。 |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/4.png) | 21-27                      | 用户任务收集1表单属性：“personalWelcomeTime”。请注意，第22行的候选组设置为“管理员”。 |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/5.png) | 31-35                      | 脚本任务表示自动数据输入到虚拟后端。请注意，虽然简单，但这是一个简单的脚本可以设置一个过程变量autoWelcomeTime（第34-35行）:`var dateAsString = new Date().toString(); execution.setVariable("autoWelcomeTime", dateAsString);` |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/6.png) | 18                         | 定义“Years of Experience”排他网关。 （决定执行其中一条或另一条路径。） |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/6.png) | 37-39                      | 表示">3"时的逻辑，使用变量yearsOfExperience :`${yearsOfExperience > 3}` |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/6.png) | 18,36                      | 在排他网关第18行，这里指向默认的执行路径”automatedIntroPath" (line 36)，表示不满足条件">3"时的执行路径 |
+| ![Alt text](https://github.com/htw0056/quick-start-demo/raw/master/activiti-quick-start-guide/picture/7.png) | 298                        | 事件结束                                                     |
 
 > 有关BPMN及其在Activiti中的使用的更多信息，请参阅Activiti用户指南中的各个部分。
 
@@ -895,4 +895,4 @@ COMPLETE Onboarding [onboarding] Sun Nov 27 22:57:42 EST 2016
 
 
 
-> 源码[下载](https://github.com/htw0056/Activiti-quick-start-guide)
+> 源码[下载](https://github.com/htw0056/quick-start-demo/tree/master/activiti-quick-start-guide)
