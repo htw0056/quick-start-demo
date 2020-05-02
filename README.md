@@ -8,4 +8,5 @@
 
 - [Activiti入门教程](https://github.com/htw0056/quick-start-demo/tree/master/activiti-quick-start-guide)
 - [spring-mybatis多数据源配置](https://github.com/htw0056/quick-start-demo/tree/master/spring-multi-mybatis)
+- [Java密码学相关api使用 demo](https://github.com/htw0056/quick-start-demo/tree/master/cryptography)
 
