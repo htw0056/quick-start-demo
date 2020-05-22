@@ -1,8 +1,7 @@
-package com.htw.cryptography;
+package com.htw.cryptography.pem;
 
 import junit.framework.TestCase;
 import org.bouncycastle.util.encoders.Base64;
-import org.bouncycastle.util.encoders.Hex;
 import org.bouncycastle.util.io.pem.PemObject;
 import org.bouncycastle.util.io.pem.PemReader;
 import org.junit.Assert;
@@ -10,7 +9,6 @@ import org.junit.Assert;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 
 /**
  * Created by htw on 2020/5/22.
@@ -18,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 public class ReadPemTest extends TestCase {
 
     /**
-     * 利用Bouncy库解析各种PEM
+     * 利用Bouncy库解析各种PEM格式
      *
      * @throws IOException
      */
