@@ -28,15 +28,15 @@ public class DhCoderTest extends TestCase {
         System.out.println("乙方公钥: " + Base64.encodeBase64String(bPublic.getEncoded()));
         System.out.println("乙方私钥: " + Base64.encodeBase64String(bPrivate.getEncoded()));
 
-        // 生成甲方本地秘钥(加密秘钥)
-        byte[] secretKey1 = DhCoder.getSecretKey(aPublic.getEncoded(), bPrivate.getEncoded());
+        // 生成甲方本地秘钥(加密秘钥):自己的私钥+对方的公钥
+        byte[] secretKey1 = DhCoder.getSecretKey(bPublic.getEncoded(), aPrivate.getEncoded());
 
-        // 生成甲方本地秘钥(加密秘钥)
-        byte[] secretKey2 = DhCoder.getSecretKey(bPublic.getEncoded(), aPrivate.getEncoded());
+        // 生成乙方本地秘钥(加密秘钥)：自己的私钥+对方的公钥
+        byte[] secretKey2 = DhCoder.getSecretKey(aPublic.getEncoded(), bPrivate.getEncoded());
 
-        System.out.println("甲方本地秘钥: "+Base64.encodeBase64String(secretKey1));
-        System.out.println("乙方本地秘钥: "+Base64.encodeBase64String(secretKey2));
+        System.out.println("甲方本地秘钥: " + Base64.encodeBase64String(secretKey1));
+        System.out.println("乙方本地秘钥: " + Base64.encodeBase64String(secretKey2));
 
-        Assert.assertArrayEquals(secretKey1,secretKey2);
+        Assert.assertArrayEquals(secretKey1, secretKey2);
     }
 }

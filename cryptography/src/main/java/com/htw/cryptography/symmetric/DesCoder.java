@@ -2,6 +2,7 @@ package com.htw.cryptography.symmetric;
 
 import javax.crypto.*;
 import javax.crypto.spec.DESKeySpec;
+import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.NoSuchAlgorithmException;
@@ -43,6 +44,20 @@ public class DesCoder {
         SecretKeyFactory keyFactory = SecretKeyFactory.getInstance(KEY_ALGORITHM);
         return keyFactory.generateSecret(desKeySpec);
     }
+
+//    /**
+//     * 根据字节数组生成秘钥
+//     * AES类秘钥反序列化方式与DES类些许不同
+//     *
+//     * @param key
+//     * @return
+//     * @throws InvalidKeyException
+//     * @throws InvalidKeySpecException
+//     * @throws NoSuchAlgorithmException
+//     */
+//    public static Key toKey(byte[] key) throws InvalidKeyException, InvalidKeySpecException, NoSuchAlgorithmException {
+//        return new SecretKeySpec(key, KEY_ALGORITHM);
+//    }
 
 
     public static byte[] encrypt(byte[] data, byte[] key) throws NoSuchPaddingException, NoSuchAlgorithmException, InvalidKeySpecException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
