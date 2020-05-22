@@ -1,4 +1,4 @@
-package com.htw.cryptography.pubickey;
+package com.htw.cryptography.publickey;
 
 import javax.crypto.KeyAgreement;
 import javax.crypto.SecretKey;

@@ -1,11 +1,10 @@
-package com.htw.cryptography.pubickey;
+package com.htw.cryptography.publickey;
 
 import junit.framework.TestCase;
 import org.apache.commons.codec.binary.Base64;
 import org.junit.Assert;
 
 import java.security.KeyPair;
-import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 

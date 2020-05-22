@@ -1,4 +1,4 @@
-package com.htw.cryptography.pubickey;
+package com.htw.cryptography.publickey;
 
 import junit.framework.TestCase;
 import org.junit.Assert;
