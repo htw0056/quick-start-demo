@@ -11,7 +11,7 @@
 | com.htw.cryptography.base64    | BASE64     |
 | com.htw.cryptography.digest    | 消息摘要   |
 | com.htw.cryptography.hmac      | 消息验证码 |
-| com.htw.cryptography.pubickey  | 非对称加密 |
+| com.htw.cryptography.publickey  | 非对称加密 |
 | com.htw.cryptography.sign      | 数字签名   |
 | com.htw.cryptography.symmetric | 对称加密   |
 
