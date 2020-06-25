@@ -4,7 +4,7 @@
 
 ```bash
 docker build -t myapp:v1 .
-docker run -p8080:8080 myapp:v1
+docker run -d -p8080:8080 myapp:v1
 ```
 
 ### 2. 验证启动成功
